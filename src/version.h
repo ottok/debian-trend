@@ -1,1 +1,1 @@
-static const char TREND_VERSION[]="trend-1.1";
+static const char TREND_VERSION[]="trend-1.2";
