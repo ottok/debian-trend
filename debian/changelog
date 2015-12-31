@@ -1,3 +1,13 @@
+trend (1.2-2) unstable; urgency=low
+
+  * Switch to debhelper 9/quilt.
+  * Switch to machine-readable copyright file.
+  * Standards-Version 3.9.6 (no changes needed).
+  * Move package maintenance to collab-maint.
+  * Add Otto Kekäläinen to uploaders.
+
+ -- Yuri D'Elia <wavexx@thregr.org>  Thu, 31 Dec 2015 12:02:52 +0100
+
 trend (1.2-1) unstable; urgency=low
 
   * New upstream version fixes linking with "gold" (Closes: #556503).
