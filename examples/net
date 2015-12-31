@@ -1,0 +1,41 @@
+#!/usr/bin/env perl
+# network usage for trend
+
+use strict;
+use warnings;
+use Time::HiRes "usleep";
+
+# be sure to flush right away!
+$| = 1;
+
+# arguments
+my $oldIn = 0;
+my $oldOut = 0;
+my $ms = ($ARGV[0]? $ARGV[0]: 0.1) * 1000000;
+my $if = ($ARGV[1]? $ARGV[1]: "eth0");
+
+# main loop
+while()
+{
+  open FD, "/proc/net/dev" or die;
+  while(<FD>)
+  {
+    my ($ent, $in, $out) = /^\s*([^\s:]+):\s*(\d+)\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+(\d+)/;
+    if($ent and $ent eq $if)
+    {
+      $oldIn = $in if($oldIn == 0);
+      $oldOut = $out if($oldOut == 0);
+
+      print(($in - $oldIn) . " " .
+	    ($out - $oldOut) . "\n");
+      
+      $oldIn = $in;
+      $oldOut = $out;
+      last;
+    }
+  }
+  close FD;
+
+  usleep $ms;
+}
+
