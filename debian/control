@@ -2,15 +2,17 @@ Source: trend
 Section: utils
 Priority: extra
 Maintainer: Yuri D'Elia <wavexx@thregr.org>
+Uploaders: Otto Kekäläinen <otto@seravo.fi>
 Build-Depends: debhelper (>= 9), freeglut3-dev
 Standards-Version: 3.9.6
 Homepage: http://www.thregr.org/~wavexx/software/trend/
-Vcs-Git: git://src.thregr.org/trend
+Vcs-Git: git://anonscm.debian.org/collab-maint/trend.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/trend.git
 
 Package: trend
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: a general-purpose, efficient trend graph
+Description: general-purpose, efficient trend graph
  trend is a general-purpose, efficient trend graph for "live" data. Data
  is read in ASCII form from a file or continuously from a FIFO and
  displayed in real-time into a multi-pass trend (much like a CRT
