@@ -13,3 +13,6 @@ export DEB_BUILD_MAINT_OPTIONS=hardening=+all
 
 override_dh_auto_clean:
 	$(MAKE) -Csrc clean
+
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS
