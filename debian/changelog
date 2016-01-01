@@ -9,7 +9,7 @@ trend (1.2-2) unstable; urgency=low
   * Move package maintenance to collab-maint.
   * Add Otto Kekäläinen to uploaders.
 
- -- Yuri D'Elia <wavexx@thregr.org>  Thu, 31 Dec 2015 12:02:52 +0100
+ -- Yuri D'Elia <wavexx@thregr.org>  Fri, 01 Jan 2016 14:33:48 +0100
 
 trend (1.2-1) unstable; urgency=low
 
