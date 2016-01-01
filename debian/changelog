@@ -1,8 +1,11 @@
 trend (1.2-2) unstable; urgency=low
 
-  * Switch to debhelper 9/quilt.
-  * Switch to machine-readable copyright file.
+  * Use source format 3.0 (quilt).
+  * Bump debhelper compat version to 9.
   * Standards-Version 3.9.6 (no changes needed).
+  * Switch to machine-readable copyright file.
+  * Enable hardening.
+  * Automatic handling of DEB_BUILD_OPTIONS.
   * Move package maintenance to collab-maint.
   * Add Otto Kekäläinen to uploaders.
 
