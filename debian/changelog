@@ -1,8 +1,9 @@
 trend (1.4-1) unstable; urgency=low
 
   * New upstream version.
-  * Standards-Version 3.9.8 (no changes needed).
   * Fixes FTBS with GCC 6.1 (Closes: #831108).
+  * Standards-Version 3.9.8 (no changes needed).
+  * Switch Vcs-Git to https.
 
  -- Yuri D'Elia <wavexx@thregr.org>  Sun, 17 Jul 2016 12:54:57 +0200
 
